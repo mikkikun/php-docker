@@ -53,15 +53,13 @@ services:
       context: .
       dockerfile: ./docker/mysql/Dockerfile
     ports:
-      - 3000:3306
+      - 3307:3306
     environment:
       MYSQL_DATABASE: test-pf
       MYSQL_USER: dbuser
       MYSQL_PASSWORD: dbuser
       MYSQL_ROOT_PASSWORD: dbuser
       TZ: 'Asia/Tokyo'
-    volumes:
-      - mysql-volume:/var/lib/mysql
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
