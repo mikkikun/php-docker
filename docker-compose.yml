@@ -74,4 +74,3 @@ services:
       - 8080:80
     volumes:
       - ./docker/phpmyadmin/sessions:/sessions
-      
